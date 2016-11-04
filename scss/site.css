@@ -1,0 +1,436 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, cite, code, del, dfn, em,
+img, ins, kbd, q, s, samp, small, strong, sub, sup, var, b, u, i,
+center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption,
+figure, footer, header, hgroup, main, menu, nav, section, summary, time, mark, audio, video {
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline; }
+
+main, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, audio, video, canvas {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+blockquote, q {
+  quotes: none; }
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none; }
+
+:focus {
+  outline: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+abbr[title] {
+  cursor: help; }
+
+fieldset {
+  border: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: static; }
+
+legend {
+  left: auto;
+  margin: 0;
+  padding: 0;
+  position: static;
+  top: auto; }
+
+address {
+  display: block;
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  font-style: normal;
+  margin: 0;
+  padding: 0; }
+
+::-moz-selection {
+  background: #adadad;
+  color: #fff; }
+
+::selection {
+  background: #adadad;
+  color: #fff; }
+
+p {
+  margin: 0;
+  padding: 0 0 15px 0; }
+
+a {
+  color: #adadad;
+  text-decoration: none; }
+  a:hover {
+    color: #0083cb;
+    text-decoration: none; }
+
+em, i {
+  font-style: italic; }
+
+strong, b {
+  font-weight: bold; }
+
+small {
+  color: #888;
+  font-size: 85%;
+  line-height: 85%; }
+
+sub, sup {
+  font-size: 85%;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  border: 0;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  -moz-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  max-width: 100%; }
+  a:hover img {
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80); }
+  img:not([alt]) {
+    border: none; }
+    .cms img:not([alt]), .m-map img:not([alt]) {
+      border: 0; }
+
+figure {
+  margin: 0;
+  padding: 0 0 15px 0;
+  text-align: center; }
+  figure figcaption {
+    color: #888;
+    font-style: italic;
+    margin: 0;
+    padding: 10px 0 0 0; }
+
+button, html input[type="button"], html input[type="reset"], html input[type="submit"] {
+  -webkit-appearance: button; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+ul, ol {
+  margin: 0;
+  padding: 0 0 10px 25px; }
+  ul li, ol li {
+    margin: 0;
+    padding: 0 0 5px 0; }
+
+ol {
+  list-style: decimal; }
+  ol ol {
+    list-style: lower-alpha; }
+    ol ol ol {
+      list-style: lower-roman; }
+
+dl {
+  margin: 0;
+  padding: 0 0 10px 0; }
+  dl dt {
+    display: block;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 0 5px 0; }
+  dl dd {
+    display: block;
+    margin: 0;
+    padding: 0 0 5px 0; }
+
+pre {
+  color: #E30613;
+  font-family: Courier New, Courier, monospace;
+  font-size: 13px;
+  max-height: 300px;
+  line-height: 16px;
+  margin: 0 0 15px 0;
+  overflow: auto;
+  padding: 0; }
+  @media screen and (min-width: 788px) {
+    pre {
+      max-height: 500px; } }
+
+[name*=" "] {
+  border: 2px solid red !important; }
+
+html {
+  min-width: 320px;
+  height: 100%; }
+
+body {
+  background-color: #5D9CEC;
+  height: 100%; }
+
+.heading {
+  margin-left: 2.5%;
+  margin-top: 10%;
+  width: 290px;
+  color: white;
+  font-weight: 500;
+  font-size: 25px;
+  font-family: 'Oswald', sans-serif;
+  position: relative;
+  height: 50px; }
+  .heading .title {
+    position: absolute;
+    bottom: 0;
+    padding: 0; }
+
+.nav {
+  height: 0;
+  overflow: hidden; }
+  .nav .level1 {
+    list-style: none;
+    margin: 0 2.5%;
+    padding: 0 90px;
+    text-align: right; }
+    @media (min-width: 1200px) {
+      .nav .level1 {
+        padding-right: 165px; } }
+    .nav .level1 .item {
+      padding: 10px 0; }
+      .nav .level1 .item .primary {
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        color: #ffffff; }
+        .nav .level1 .item .primary:hover {
+          color: red; }
+
+.menu {
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 10%;
+  bottom: 81%;
+  text-align: center;
+  font-size: 35px;
+  padding-top: 8px;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s; }
+  .menu.rotate {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); }
+  @media (min-width: 1200px) {
+    .menu {
+      bottom: 66.5%; } }
+
+.content {
+  background-color: white;
+  border-radius: 5px 5px 0 0;
+  width: 95%;
+  margin: 5px 2.5% 0 2.5%;
+  padding: 0; }
+  .content .info {
+    list-style: none;
+    padding: 5px 5px; }
+    .content .info .publisher, .content .info .release {
+      display: inline;
+      padding-right: 30px;
+      font-family: 'Oswald', sans-serif;
+      color: #aaaaaa;
+      font-style: italic; }
+  .content .synopsis, .content .DLC, .content .achievement {
+    margin: 15px 5px 0 5px; }
+    .content .synopsis .overview, .content .synopsis .DLC-name, .content .DLC .overview, .content .DLC .DLC-name, .content .achievement .overview, .content .achievement .DLC-name {
+      font-family: 'Oswald', sans-serif; }
+    .content .synopsis .overview, .content .DLC .overview, .content .achievement .overview {
+      line-height: 20px; }
+    .content .synopsis .icon, .content .DLC .icon, .content .achievement .icon {
+      margin-right: 5px;
+      float: left;
+      height: 50px;
+      width: 50px; }
+    .content .synopsis .name, .content .DLC .name, .content .achievement .name {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 400;
+      font-size: 20px; }
+    .content .synopsis .desc, .content .DLC .desc, .content .achievement .desc {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 200;
+      font-size: 15px;
+      color: #777777; }
+  .content .subheading {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px; }
+  .content .game {
+    font-family: 'Oswald', sans-serif;
+    height: 185px; }
+    .content .game .boxart {
+      float: left; }
+      .content .game .boxart .art {
+        height: 150px;
+        width: 120px;
+        margin: 0 4px 0 0; }
+    .content .game .title {
+      width: 78%;
+      font-size: 20px;
+      padding: 4px; }
+      .content .game .title .primary {
+        color: black; }
+    .content .game .percent {
+      font-size: 40px;
+      text-align: right;
+      padding: 5px;
+      position: relative;
+      top: 50px; }
+    .content .game .progressBar {
+      width: 100%;
+      height: 20px;
+      background-color: #ddd;
+      float: left;
+      margin-bottom: 5px; }
+    .content .game .myBar, .content .game .myBar2 {
+      position: absolute;
+      width: 10%;
+      background-color: #4CAF50; }
+    .content .game .label, .content .game #label2 {
+      text-align: center;
+      line-height: 20px; }
+  .content .search-box {
+    color: #aaa;
+    font-size: 19px;
+    margin: 5px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #aaa; }
+
+.user {
+  margin: 20px; }
+  .user .name {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    text-align: center; }
+  .user .icon {
+    height: 150px;
+    width: 150px;
+    background-color: #dddddd;
+    border-radius: 50%;
+    font-size: 75px;
+    margin: 0 auto;
+    position: inherit;
+    display: inherit; }
+
+.stats {
+  height: 100px; }
+  .stats .achievements, .stats .achieve_per, .stats .games {
+    color: white; }
+    .stats .achievements .numbers, .stats .achievements .primary, .stats .achieve_per .numbers, .stats .achieve_per .primary, .stats .games .numbers, .stats .games .primary {
+      font-family: 'Oswald', sans-serif;
+      text-align: center; }
+    .stats .achievements .numbers, .stats .achieve_per .numbers, .stats .games .numbers {
+      font-size: 30px; }
+
+.offscreen {
+  height: 0;
+  left: -9999px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  text-indent: -9999px;
+  width: 0;
+  z-index: -1; }
+
+.hide {
+  display: none; }
+
+.touch .hide-on-touch {
+  display: none; }
+
+.no-touch .hide-on-no-touch {
+  display: none; }
+
+@media screen and (max-width: 499px) {
+  .hide-on-mobile {
+    display: none; } }
+
+@media screen and (min-width: 500px) and (max-width: 559px) {
+  .hide-on-mobile-large {
+    display: none; } }
+
+@media screen and (min-width: 560px) and (max-width: 787px) {
+  .hide-on-tablet {
+    display: none; } }
+
+@media screen and (min-width: 788px) and (max-width: 979px) {
+  .hide-on-tablet-large {
+    display: none; } }
+
+@media screen and (min-width: 980px) and (max-width: 1154px) {
+  .hide-on-desktop {
+    display: none; } }
+
+@media screen and (min-width: 1155px) and (max-width: 1219px) {
+  .hide-on-desktop-large {
+    display: none; } }
+
+@media screen and (min-width: 1220px) {
+  .hide-on-large {
+    display: none; } }
+
+.js .hide-on-js {
+  display: none; }
+
+.no-js .show-on-js {
+  display: none; }
+
+.align-center {
+  text-align: center; }
+
+.align-right {
+  text-align: right; }
+
+.align-justify {
+  text-align: justify; }
+
+.last {
+  padding-bottom: 0; }
+
+.clearfix:after, .form-wrapper:after, .form-row:after, .form-action:after, .cms:after {
+  clear: both;
+  content: "";
+  display: block;
+  font-size: 0;
+  height: 0;
+  visibility: hidden; }
+
+* html .clearfix, * html .form-wrapper, * html .form-row, * html .form-action, * html .cms {
+  height: 1%; }
+
+/*# sourceMappingURL=site.css.map */

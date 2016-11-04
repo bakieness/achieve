@@ -1,0 +1,269 @@
+﻿@import "reset";
+// LAYOUT
+
+html
+{
+    min-width: 320px;
+    height: 100%;
+}
+
+body
+{
+    background-color: #5D9CEC;
+    height: 100%;
+}
+.heading
+{
+    margin-left: 2.5%;
+    margin-top: 10%;
+    width: 290px;
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    height: 50px;
+    .title
+    {
+        position: absolute;
+        bottom: 0;
+        padding: 0;
+    }
+}
+.nav
+{
+    height: 0;
+    overflow: hidden;
+    .level1
+    {
+        list-style: none;
+        margin: 0 2.5%;
+        padding: 0 90px;
+        text-align: right;
+        @include desktop {
+            padding-right: 165px;
+        }
+        .item
+        {
+            padding: 10px 0;
+            .primary
+            {
+                font-family: 'Oswald', sans-serif;
+                font-size: 20px;
+                color: #ffffff;
+                &:hover
+                {
+                    color: red;
+                }
+            }
+        }
+    }
+}
+.menu{
+        background-color: red;
+        border-radius: 50%;
+        color: white;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 10%;
+        bottom: 81%;
+        text-align: center;
+        font-size: 35px;
+        padding-top: 8px;
+        -webkit-transition: 0.2s;
+        -moz-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s;
+        &.rotate
+        {
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+        @include desktop {
+            bottom: 66.5%;
+        }
+}
+.content
+{
+    background-color: white;
+    border-radius: 5px 5px 0 0;
+    width: 95%;
+    margin: 5px 2.5% 0 2.5%;
+    padding: 0;
+
+    .info
+    {
+        list-style: none;
+        padding: 5px 5px;
+
+        .publisher, .release
+        {
+            display: inline;
+            padding-right: 30px;
+            font-family: 'Oswald', sans-serif;
+            color: #aaaaaa;
+            font-style: italic;
+        }
+    }
+
+    .synopsis, .DLC, .achievement
+    {
+        margin: 15px 5px 0 5px;
+
+        .overview, .DLC-name
+        {
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .overview
+        {
+            line-height: 20px;
+        }
+
+        .icon
+        {
+            margin-right: 5px;
+            float: left;
+            height: 50px;
+            width: 50px;
+        }
+        .name
+        {
+            font-family: 'Oswald', sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+        }
+        .desc
+        {
+            font-family: 'Oswald', sans-serif;
+            font-weight: 200;
+            font-size: 15px;
+            color: #777777;
+        }
+    }
+
+    .subheading
+    {
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+    }
+
+    .game
+    {
+        font-family: 'Oswald', sans-serif;
+        height: 185px;
+        .boxart
+        {
+            float: left;
+            .art
+            {
+                height: 150px;
+                width: 120px;
+                margin: 0 4px 0 0;
+            }
+        }
+        .title
+        {
+            width: 78%;
+            font-size: 20px;
+            padding: 4px;
+            .primary
+            {
+                color: black;
+            }
+        }
+        .percent
+        {
+            font-size: 40px;
+            text-align: right;
+            padding: 5px;
+            position: relative;
+            top: 50px;
+        }
+        .progressBar
+        {
+            width: 100%;
+            height: 20px;
+            background-color: #ddd;
+            float: left;
+            margin-bottom: 5px;
+        }
+
+        .myBar, .myBar2
+        {
+            position: absolute;
+            width: 10%;
+            background-color: #4CAF50;
+        }
+
+        .label, #label2
+        {
+            text-align: center;
+            line-height: 20px;
+        }
+    }
+
+    .search-box
+    {
+        color: #aaa;
+        font-size: 19px;
+        margin: 5px;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid #aaa;
+    }
+}
+
+.user
+{
+    margin: 20px;
+    .name
+    {
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        font-size: 50px;
+        color: white;
+        text-align: center;
+    }
+    .icon
+    {
+        height: 150px;
+        width: 150px;
+        background-color: #dddddd;
+        border-radius: 50%;
+        font-size: 75px;
+        margin: 0 auto;
+        position: inherit;
+        display: inherit;
+    }
+}
+
+.stats
+{
+    height: 100px;
+    .achievements, .achieve_per, .games
+    {
+        color: white;
+        .numbers, .primary
+        {    
+            font-family: 'Oswald', sans-serif;
+            text-align: center;
+        }
+        .numbers
+        {
+            font-size: 30px;
+        }
+    }
+}
+
+// MODULES
+//@import "modules/example";
+
+
+// STATES / FIXES
+@import "helpers";
+@import "fixes";

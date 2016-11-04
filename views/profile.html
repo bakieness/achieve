@@ -1,0 +1,75 @@
+<script src="js/header.js"></script>
+<script>
+var width = 0;
+var bar = 'myBar';
+var label = 'label';
+var percent = 'percent';
+var elem = document.getElementById(bar);
+var id = setInterval(frame, 10);
+function frame() {
+	if (width >= 66) {
+		clearInterval(id);
+    } else {
+    	width++;
+      	elem.style.width = width + '%';
+      	document.getElementById(label).innerHTML = ' ';
+      	document.getElementById(percent).innerHTML = width * 1  + '%';
+    }
+}
+</script>
+
+<div class="user">
+	<p class="name">JAMES</p>
+	<div class="icon fa-stack fa-lg">
+  		<i class="fa fa-user fa-stack-1x"></i>
+	</div>
+</div>
+
+<div class="stats col-xs-12">
+	<div class="achievements col-xs-4">
+		<p class="numbers">234</p>
+		<p class="primary">ACHIEVEMENTS</p>
+	</div>
+	<div class="achieve_per col-xs-4">
+		<p class="numbers">51%</p>
+		<p class="primary">TOTAL ACHIEVEMENTS</p>
+	</div>
+	<div class="games col-xs-4">
+		<p class="numbers">20</p>
+		<p class="primary">GAMES</p>
+	</div>
+</div>
+
+<nav class="col-xs-12" ng-include="'views/nav.html'"></nav>
+<div style="bottom: 38%; z-index: 2;" class="menu fa fa-ellipsis-h"></div>
+
+<div class="content col-xs-12">
+	<div class="game">
+		<div class="boxart">
+			<img class="art" src="images/ACS_Box_art.jpg" alt="">
+		</div>
+		<div class="title">
+			<a href="#/index" class="primary">ASSASSIN'S CREED: SYNDICATE</a>
+		</div>
+		<div id='percent' class="percent"></div>
+		<div id="progrssBar" class="progressBar">
+			<div id="myBar" class="myBar">
+    			<div id="label" class="label"></div>
+  			</div>
+		</div>
+	</div>
+	<div class="game">
+		<div class="boxart">
+			<img class="art" src="images/Acunity.jpg" alt="">
+		</div>
+		<div class="title">
+			<a href="#/index" class="primary">ASSASSIN'S CREED: UNITY</a>
+		</div>
+		<div id='percent' class="percent"></div>
+		<div id="progrssBar" class="progressBar">
+			<div id="myBar" class="myBar">
+    			<div id="label" class="label">10%</div>
+  			</div>
+		</div>
+	</div>
+</div>
